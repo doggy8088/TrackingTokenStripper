@@ -52,3 +52,7 @@ A [Tampermonkey](https://www.tampermonkey.net/) Userscript that remove most of t
   - [@run-at](https://www.tampermonkey.net/documentation.php#_run_at)
 - [About | TrackingTokenStripper | Userscripts | OpenUserJS](https://openuserjs.org/scripts/doggy8088/TrackingTokenStripper)
 - [TrackingTokenStripper | Greasy Fork](https://greasyfork.org/en/scripts/409925-trackingtokenstripper)
+
+## Related Userscripts
+
+- [chgc/CleanFBSapce: 不想看到 FB 贊助廣告的套件](https://github.com/chgc/CleanFBSapce)
