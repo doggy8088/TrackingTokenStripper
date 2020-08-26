@@ -46,12 +46,12 @@
     function TrackingTokenStripper(url) {
         return {
             remove(name) {
-                var [path, other] = url.split('?');
-                var [query, hash] = other ? other.split('#') : [query, ''];
+                var [path, other] = url.split('?', 2);
+                var [query, hash] = other ? other.split('#', 2) : [query, ''];
                 if (query) {
                     let new_query = [];
                     for (let param of query.split('&')) {
-                        let [key, val] = param.split('=');
+                        let [key, val] = param.split('=', 2);
                         if (key !== name) {
                             new_query.push(param);
                         }
