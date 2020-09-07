@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         TrackingTokenStripper
-// @version      1.0
+// @version      1.1
 // @description  Remove most of the annoying tracking token from URL parameters
 // @license      MIT
 // @homepage     https://blog.miniasp.com/
