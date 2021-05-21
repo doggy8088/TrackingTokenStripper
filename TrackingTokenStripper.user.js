@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         TrackingTokenStripper
-// @version      1.2
+// @version      1.3
 // @description  Remove most of the annoying tracking token from URL parameters
 // @license      MIT
 // @homepage     https://blog.miniasp.com/
@@ -67,6 +67,7 @@
 
     if (s && location.href !== s) {
         location.href = s;
+        // console.log(s); alert(s);
     }
 
     function TrackingTokenStripper(url) {
@@ -91,6 +92,10 @@
 
                 query = query ? query = '?' + query : '';
                 hash = hash ? hash = '#' + hash : '';
+
+                if (url.substr(url.length - 1) == '#') {
+                    hash = '#';
+                }
 
                 return TrackingTokenStripper(path + query + hash);
             },
