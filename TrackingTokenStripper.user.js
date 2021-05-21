@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         TrackingTokenStripper
-// @version      1.1
+// @version      1.2
 // @description  Remove most of the annoying tracking token from URL parameters
 // @license      MIT
 // @homepage     https://blog.miniasp.com/
@@ -37,6 +37,32 @@
         .remove('mkt_tok')
         .remove('yclid')
         .remove('_openstat')
+
+        .remove('wt.mc_id')
+        .remove('__tn__')
+        .remove('gclsrc')
+        .remove('itm_source')
+        .remove('itm_medium')
+        .remove('itm_campaign')
+        .remove('mc') // sendgrid.com
+        .remove('mcd') // sendgrid.com
+        .remove('cvosrc') // sendgrid.com
+        .remove('cr_cc') // https://blogs.microsoft.com/
+
+        .remove('sc_channel')
+        .remove('sc_campaign')
+        .remove('sc_geo')
+        .remove('trk')
+        .remove('sc_publisher')
+        .remove('trkCampaign')
+        .remove('sc_outcome')
+        .remove('sc_country')
+
+        .remove('__hstc')
+        .remove('__hssc')
+        .remove('__hsfp')
+        .remove('_gl')
+
         .toString();
 
     if (s && location.href !== s) {
